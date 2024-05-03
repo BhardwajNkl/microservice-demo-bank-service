@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/BhardwajNkl/bank-app-config-repo
+  config:
+    client:
+      name: service-discovery-server, account-management-service, customer-management-service, api-gateway
+
+server:
+  port: 8888
